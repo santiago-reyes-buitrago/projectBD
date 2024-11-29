@@ -12,6 +12,7 @@ const port = process.env.PORT || 3000;
 
 
 app.use(cors());
+app.use(express.json());
 verificarConexion();
 
 app.get("/", async (req: Request, res: Response) => {
